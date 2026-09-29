@@ -44,22 +44,41 @@ thunderstorm-forecasting-project/
 └── README.md                     # Project documentation
 
 
-**⚙️ Tech Stack**
-**Language**: Python 3.11+
+## ⚙️ Tech Stack
 
-**Machine Learning**: Scikit-Learn, XGBoost, LightGBM
+* **Language**: Python 3.11+
+* **Machine Learning**: Scikit-Learn, XGBoost, LightGBM
+* **Data Processing & Analytics**: Pandas, NumPy
+* **MLOps & Experiment Tracking**: MLflow
+* **Data Visualization**: Seaborn, Matplotlib
+* **Web UI Framework**: Streamlit
 
-**Data Processing & Analytics**: Pandas, NumPy
+🚀 Getting Started
+1. Prerequisites
+Ensure you have Python 3.11 or higher installed on your local system.
 
-**MLOps & Experiment Tracking**: MLflow
-
-**Data Visualization**: Seaborn, Matplotlib
-
-**Web UI Framework**: Streamlit
+2. Installation & Environment Setup
+Clone the repository and set up a virtual environment:
 
 
 ## **🏃 Execution Workflow**
 Execute the pipeline in the following sequence:
+
+# Clone the repository
+git clone [https://github.com/your-username/thunderstorm-forecasting-project.git](https://github.com/your-username/thunderstorm-forecasting-project.git)
+cd thunderstorm-forecasting-project
+
+# Create a Python virtual environment
+python -m venv venv
+
+# Activate the virtual environment
+# On Windows PowerShell:
+.\venv\Scripts\activate
+# On macOS / Linux:
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
 
 Step 1: Generate Atmospheric Dataset
 Construct the thermodynamic observation dataset:
