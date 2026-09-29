@@ -26,6 +26,22 @@ Thunderstorms and severe convective activity pose significant risks to aviation,
 
 ---
 
+##  ⚙️ Tech Stack 
+
+**Language**: Python 3.11+
+
+**Machine Learning**: Scikit-Learn, XGBoost, LightGBM
+
+**Data Processing & Analytics**: Pandas, NumPy
+
+**MLOps & Experiment Tracking**: MLflow
+
+**Data Visualization**: Seaborn, Matplotlib
+
+**Web UI Framework**: Streamlit
+
+---
+
 ## 🏗️ Project Architecture & Directory Structure
 
 ```text
@@ -42,30 +58,17 @@ thunderstorm-forecasting-project/
 ├── requirements.txt              # Project package dependencies
 ├── LICENSE                       # MIT License
 └── README.md                     # Project documentation
-
-
-## ⚙️ Tech Stack
-
-* **Language**: Python 3.11+
-* **Machine Learning**: Scikit-Learn, XGBoost, LightGBM
-* **Data Processing & Analytics**: Pandas, NumPy
-* **MLOps & Experiment Tracking**: MLflow
-* **Data Visualization**: Seaborn, Matplotlib
-* **Web UI Framework**: Streamlit
-
-🚀 Getting Started
+```
+---
+**## 🚀 Getting Started**
 1. Prerequisites
 Ensure you have Python 3.11 or higher installed on your local system.
 
 2. Installation & Environment Setup
 Clone the repository and set up a virtual environment:
-
-
-## **🏃 Execution Workflow**
-Execute the pipeline in the following sequence:
-
+```
 # Clone the repository
-git clone [https://github.com/your-username/thunderstorm-forecasting-project.git](https://github.com/your-username/thunderstorm-forecasting-project.git)
+git clone https://github.com/your-username/thunderstorm-forecasting-project.git
 cd thunderstorm-forecasting-project
 
 # Create a Python virtual environment
@@ -79,7 +82,34 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
-Step 1: Generate Atmospheric Dataset
+**🏃 Execution Workflow**
+Execute the pipeline in the following sequence:
+
+**Step 1:** Generate Atmospheric Dataset
 Construct the thermodynamic observation dataset:
+```
+python data/generate_data.py
+```
+
+**Step 2:** Train Models & Log Experiments
+Fit the models, compute classification metrics, and push tracking data to MLflow:
+```
+python src/train.py
+```
+**Step 3:** Launch MLflow Tracking Dashboard
+Start the local MLflow server to compare experiment runs and view evaluation artifacts:
+```
+mlflow ui
+```
+**Step 4:** Run the Streamlit Web Application
+Open a new terminal tab (ensuring your virtual environment is activated) and run:
+```
+streamlit run src/app.py
+```
+**📜 License**
+
+This project is open-source and licensed under the **MIT License**.
+
 
