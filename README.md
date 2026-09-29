@@ -42,3 +42,25 @@ thunderstorm-forecasting-project/
 ├── requirements.txt              # Project package dependencies
 ├── LICENSE                       # MIT License
 └── README.md                     # Project documentation
+
+
+**⚙️ Tech Stack**
+**Language**: Python 3.11+
+
+**Machine Learning**: Scikit-Learn, XGBoost, LightGBM
+
+**Data Processing & Analytics**: Pandas, NumPy
+
+**MLOps & Experiment Tracking**: MLflow
+
+**Data Visualization**: Seaborn, Matplotlib
+
+**Web UI Framework**: Streamlit
+
+
+## **🏃 Execution Workflow**
+Execute the pipeline in the following sequence:
+
+Step 1: Generate Atmospheric Dataset
+Construct the thermodynamic observation dataset:
+
